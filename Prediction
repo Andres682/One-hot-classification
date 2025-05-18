@@ -1,0 +1,10 @@
+# prediction.py
+import joblib
+import numpy as np
+
+model = joblib.load('model.pkl')
+
+new_input = np.array([[0, 1, 0]])  # Ejemplo: categoría '1'
+prediction = model.predict(new_input)
+
+print(f"La predicción para la entrada {new_input} es: {prediction[0]}")
