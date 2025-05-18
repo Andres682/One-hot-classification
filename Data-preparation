@@ -1,0 +1,12 @@
+# data_preparation.py
+import numpy as np
+
+def prepare_data():
+    # Datos de entrada one-hot y etiquetas
+    X = np.array([[1, 0, 0],
+                  [0, 1, 0],
+                  [0, 0, 1],
+                  [1, 0, 0],
+                  [0, 1, 0]])
+    y = np.array([[0], [1], [0], [0], [1]])  # Etiquetas binarias
+    return X, y
